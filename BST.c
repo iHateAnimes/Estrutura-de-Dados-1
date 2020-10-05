@@ -14,7 +14,7 @@ int main(){
     node* posOrder = NULL;
     node* levelOrder = NULL;
     while(1){
-        /*system("clear");
+        system("clear");
         printf("\n ----------------------------------------------");
         printf("\n|  1 - Inserir um elemento                     |");
         printf("\n|  2 - Buscar um elemento                      |");
@@ -39,15 +39,15 @@ int main(){
         printf("\n| 21 - Calcular a altura de um nó              |");
         printf("\n| 22 - Destruir a árvore                       |");
         printf("\n ----------------------------------------------");
-        printf("\nOperação: ");*/
+        printf("\nOperação: ");
         scanf("%d",&op);
         if(op==1){
-            //printf("\nElemento de informação: ");
+            printf("\nElemento de informação: ");
             scanf("%d",&value);
             root = insertBST(root,value);
         }
         else if(op==2){
-            //printf("\nElemento de informação: ");
+            printf("\nElemento de informação: ");
             scanf("%d",&value);
             temp = searchBST(root,value);
             if(temp!=NULL) printf("\ntrue\n");
@@ -55,7 +55,7 @@ int main(){
         }
         else if(op==3){
             Info* inf;
-            //printf("\nElemento de informação: ");
+            printf("\nElemento de informação: ");
             scanf("%d",&value);
             inf = createInfo(value);
             root = deleteBST(root,inf);
@@ -118,8 +118,8 @@ int main(){
             printf("\n");
             return 0;
         }
-        //printf("\nPressione enter para continuar...");
-        //getchar();
-        //getchar();
+        printf("\nPressione enter para continuar...");
+        getchar();
+        getchar();
     }
 }

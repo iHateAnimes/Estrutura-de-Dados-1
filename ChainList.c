@@ -1,4 +1,10 @@
-#include "Clist.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct _node{
+    struct _node* next;
+    int value;
+}node;
 
 void createCList(node** first, node** last,int value){
     *first = (node *)malloc(sizeof(node));

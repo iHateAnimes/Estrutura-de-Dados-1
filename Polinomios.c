@@ -1,4 +1,13 @@
-#include "poly.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct tnode{
+    struct tnode *next;
+    int num;
+    int coeff;
+}node;
+
+
 node* createNode(int coeff,int num){
     node* newnode=NULL;
     newnode = (node *)malloc(sizeof(node));

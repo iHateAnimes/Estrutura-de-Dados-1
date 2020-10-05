@@ -1,4 +1,16 @@
-#include "lde.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct node{
+    struct node* next;
+    struct node* prev;
+    int value;
+}node;
+
+typedef struct{
+    node* head;
+    int size;
+}dlist;
 
 dlist* createList(){
     dlist* list = (dlist *)malloc(sizeof(dlist));

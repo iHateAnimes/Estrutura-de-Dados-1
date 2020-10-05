@@ -1,4 +1,20 @@
-#include "list.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct{
+    int num;
+}info;
+
+typedef struct _node{
+    struct _node *next;
+    info *info;
+}node;
+
+typedef struct{
+    node* head;
+    int size;
+}list;
 
 list* createList(){
     list* newlist;

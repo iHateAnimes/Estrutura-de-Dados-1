@@ -5,10 +5,6 @@
 #include <stdlib.h>
 #include "BST.h"
 
-typedef struct _node{
-    struct tnode* next;
-    Info* info;
-}node;
 //--------------------------------------------------------------------------------------------------------
 //Função principal que realiza as operações sobre a BST
 //--------------------------------------------------------------------------------------------------------
